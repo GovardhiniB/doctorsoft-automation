@@ -84,7 +84,7 @@ wait.until(EC.presence_of_element_located((By.ID, "contentBlock")))
 
 for idx, full_name in enumerate(names, start=1):
 
-    print(f"\n🚀 [{idx}] Processing: {full_name}")
+    print(f"\n[{idx}] Processing: {full_name}")
 
     try:
         if "," not in full_name:
