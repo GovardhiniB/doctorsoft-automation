@@ -137,7 +137,7 @@ for idx, full_name in enumerate(names, start=1):
         pdf_path = os.path.join(patient_folder, f"{idx}.pdf")
 
         if os.path.exists(pdf_path):
-            print(f"⏭️ {idx}.pdf already exists, skipping")
+            print(f" {idx}.pdf already exists, skipping")
             continue
 
         time.sleep(1.5)
@@ -162,7 +162,7 @@ for idx, full_name in enumerate(names, start=1):
 
         time.sleep(2)
 
-        print("🖨️ Opening print preview...")
+        print(" Opening print preview...")
 
         print_btn = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable(
